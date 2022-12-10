@@ -1,5 +1,5 @@
 {
-  "name": "ember-asciinema-player",
+  "name": "@hashicorp/ember-asciinema-player",
   "version": "0.0.0",
   "private": true,
   "description": "Asciinema Player for Ember.",
@@ -47,6 +47,7 @@
     "ember-cli": "~4.9.1",
     "ember-cli-dependency-checker": "^3.3.1",
     "ember-cli-inject-live-reload": "^2.1.0",
+    "ember-cli-sass": "^11.0.1",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
     "ember-load-initializers": "^2.1.2",
@@ -68,6 +69,7 @@
     "prettier": "^2.8.1",
     "qunit": "^2.19.3",
     "qunit-dom": "^2.0.0",
+    "sass": "^1.56.2",
     "webpack": "^5.75.0"
   },
   "peerDependencies": {

@@ -1,1 +1,1 @@
-export { default } from 'ember-asciinema-player/components/asciinema-player';
+export { default } from '@hashicorp/ember-asciinema-player/components/asciinema-player';
