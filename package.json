@@ -1,13 +1,13 @@
 {
   "name": "ember-asciinema-player",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Asciinema Player for Ember.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
-  "license": "MIT",
-  "author": "",
+  "repository": "https://github.com/hashicorp/ember-asciinema-player",
+  "license": "MPL-2.0",
+  "author": "HashiCorp",
   "directories": {
     "doc": "doc",
     "test": "tests"
