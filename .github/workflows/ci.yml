@@ -29,6 +29,7 @@ jobs:
         if: steps.node-modules-cache.outputs.cache-hit != 'true'
         with:
           node-version: '16.x'
+      - run: yarn install
       - name: Run tests
         run: yarn test:ember
   #
