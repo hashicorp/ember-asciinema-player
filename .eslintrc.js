@@ -7,15 +7,15 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     requireConfigFile: false,
-    ecmaFeatures: {
-      legacyDecorators: true,
+    babelOptions: {
+      plugins: [['@babel/plugin-proposal-decorators', { legacy: true }]],
     },
   },
   plugins: ['ember'],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
-    'plugin:prettier/recommended',
+    'prettier',
   ],
   env: {
     browser: true,
