@@ -1,6 +1,6 @@
 {
-  "name": "ember-asciinema-player",
   "version": "0.0.0",
+  "private": true,
   "description": "Asciinema Player for Ember.",
   "keywords": [
     "ember-addon"
