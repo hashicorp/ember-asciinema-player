@@ -1,1 +1,8 @@
+@import '@hashicorp/design-system-components';
 @import '@hashicorp/ember-asciinema-player';
+
+.ember-application {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}

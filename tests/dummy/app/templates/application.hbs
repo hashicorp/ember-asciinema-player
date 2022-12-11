@@ -1,5 +1,31 @@
 {{page-title "Dummy"}}
 
+<h1 class="hds-typography-display-500">@hashicorp/ember-asciinema-player</h1>
+
+<p class="hds-font-family-sans-text">
+  <Hds::Link::Inline
+    @href="/tests?hidepassed"
+    @isHrefExternal={{false}}
+    @icon="beaker"
+    @iconPosition="leading"
+  >Tests</Hds::Link::Inline>
+  |
+  <Hds::Link::Inline
+    @href="https://github.com/hashicorp/ember-asciinema-player"
+    @icon="github"
+    @iconPosition="leading"
+  >GitHub</Hds::Link::Inline>
+</p>
+
+<p class="hds-font-family-sans-text">
+  Ember Asciinema Player
+  is an Ember v4+ component wrapper for
+  <Hds::Link::Inline
+    @href="https://github.com/asciinema/asciinema-player"
+    @icon="external-link"
+  >asciinema-player</Hds::Link::Inline>.
+</p>
+
 <Heap::Player @data={{@model}} />
 
 {{outlet}}

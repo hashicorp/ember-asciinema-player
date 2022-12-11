@@ -4,7 +4,12 @@ const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function (defaults) {
   const app = new EmberAddon(defaults, {
-    // Add options here
+    sassOptions: {
+      precision: 4,
+      includePaths: [
+        './node_modules/@hashicorp/design-system-tokens/dist/products/css',
+      ],
+    },
   });
 
   /*

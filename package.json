@@ -42,6 +42,8 @@
     "@embroider/test-setup": "^2.0.2",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@hashicorp/design-system-components": "^1.4.0",
+    "@hashicorp/ember-flight-icons": "^3.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^7.6.0",
     "ember-cli": "~4.9.1",
