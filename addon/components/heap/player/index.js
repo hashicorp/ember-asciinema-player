@@ -1,7 +1,6 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
-import { debounce } from '@ember/runloop';
 import * as AsciinemaPlayer from 'asciinema-player';
 
 export default class HeapPlayerComponent extends Component {
