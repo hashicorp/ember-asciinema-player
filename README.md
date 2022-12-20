@@ -1,6 +1,6 @@
 # ember-asciinema-player
 
-[Short description of the addon.]
+Ember Asciinema Player is an Ember v4+ component wrapper for asciinema-player.
 
 
 ## Compatibility
