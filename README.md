@@ -1,12 +1,12 @@
 # ember-asciinema-player
 
-[Short description of the addon.]
+Asciinema Player for Ember.
 
 
 ## Compatibility
 
-* Ember.js v3.28 or above
-* Ember CLI v3.28 or above
+* Ember.js v4 or above
+* Ember CLI v4 or above
 * Node.js v14 or above
 
 
@@ -19,9 +19,28 @@ ember install ember-asciinema-player
 
 ## Usage
 
-[Longer description of how to use the addon in apps.]
+Add the player component to a template:
 
+```hbs
+<Heap::Player @data={{@asciicastData}} />
+```
 
-## Contributing
+This example assumes that `@asciicastData` is a preloaded asciicast file.
+Asciicast may be fetched from a remote source.  For example, to preload
+asciicast in a route:
 
-See the [Contributing](CONTRIBUTING.md) guide for details.
+```js
+async model() {
+  const response = await fetch('/example.cast');
+  const asciicast = await response.text();
+  return asciicast;
+}
+```
+
+## Example Asciicast
+
+Example asciicast for development purposes may be found at
+[asciinema.org/explore](https://asciinema.org/explore).  To use the example
+asciicast file from this project, copy `tests/dummy/public/example.cast` to your
+own Ember project's `public/` folder and fetch it,
+e.g. `const response = await fetch('/example.cast');`.

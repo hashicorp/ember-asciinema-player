@@ -1,11 +1,14 @@
 'use strict';
 
+const rootURL = process.env.GITHUB_PAGES ? '/ember-asciinema-player/' : '/';
+const locationType = process.env.GITHUB_PAGES ? 'hash' : 'history';
+
 module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'dummy',
     environment,
-    rootURL: '/',
-    locationType: 'history',
+    rootURL,
+    locationType,
     EmberENV: {
       EXTEND_PROTOTYPES: false,
       FEATURES: {
