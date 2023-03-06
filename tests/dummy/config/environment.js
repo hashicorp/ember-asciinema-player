@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 'use strict';
 
 const rootURL = process.env.GITHUB_PAGES ? '/ember-asciinema-player/' : '/';
