@@ -18,7 +18,7 @@ module('Integration | Component | heap/player', function (hooks) {
     const asciicastContent = await asciicast.text();
     this.set('data', asciicastContent);
 
-    await render(hbs`<Heap::Player @data={{this.data}} />`);
+    await render(hbs`<Heap::Player @data={{this.data}} @poster='npt:1:30' />`);
     // AsciinemaPlayer does not come with a "ready" event, and its
     // initialization is async.  Therefore tests must `waitUntil` the expected
     // DOM state is reached.

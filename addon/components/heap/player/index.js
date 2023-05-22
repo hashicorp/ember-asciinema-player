@@ -22,6 +22,48 @@ export default class HeapPlayerComponent extends Component {
    */
   initialized = false;
 
+  /**
+   * Options of the underlying AsciinemaPlayer supported by this component,
+   * which may be passed as named arguments to the player.
+   * @type {string[]}
+   * @see https://github.com/asciinema/asciinema-player#options
+   */
+  supportedOptions = new Array(
+    'autoPlay',
+    'loop',
+    'startAt',
+    'speed',
+    'idleTimeLimit',
+    'theme',
+    'poster',
+    'fit',
+    'controls',
+    'markers',
+    'pauseOnMarkers',
+  );
+
+  /**
+   * An object of options where each possible key from `supportOptions` is
+   * included if and only if its associated value was passed to the component
+   * as an argument.
+   *
+   * E.g. `@autoPlay={{true}} @fit='both'` results in
+   * the options object `{autoPlay: true, fit: 'both'}`.
+   * @type {object}
+   * @see https://github.com/asciinema/asciinema-player#options
+   */
+  get options() {
+    return this.supportedOptions.reduce(
+      (obj, key) => {
+        console.log(key, this.args?.[key]);
+        return this.args?.[key] !== undefined
+          ? { ...obj, [key]: this.args[key] }
+          : obj
+      },
+      {}
+    );
+  }
+
   // =methods
 
   /**
@@ -58,7 +100,7 @@ export default class HeapPlayerComponent extends Component {
   @action
   initializePlayer(containerElement) {
     const { data } = this.args;
-    this.create({ data }, containerElement, { poster: 'npt:1:30' });
+    this.create({ data }, containerElement, this.options);
   }
 
   /**

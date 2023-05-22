@@ -29,8 +29,30 @@
     @href="https://github.com/asciinema/asciinema-player"
     @icon="external-link"
   >asciinema-player</Hds::Link::Inline>.
+  The following <Hds::Link::Inline
+    @href="https://github.com/asciinema/asciinema-player#options"
+    @icon="external-link"
+  >supported options of asciinema-player</Hds::Link::Inline>
+  may be passed as component arguments:
+  <code class="hds-font-family-mono-code hds-foreground-highlight">autoPlay</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">loop</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">startAt</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">speed</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">idleTimeLimit</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">theme</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">poster</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">fit</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">controls</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">markers</code>,
+  <code class="hds-font-family-mono-code hds-foreground-highlight">pauseOnMarkers</code>.
+  <br>
+  <br>
+  Example usage:
+  <code class="hds-font-family-mono-code hds-foreground-success">
+    &lt;Heap::Player @data={{{'{{this.data}}'}}} @poster='npt:1:30' /&gt;
+  </code>
 </p>
 
-<Heap::Player @data={{@model}} />
+<Heap::Player @data={{@model}} @poster='npt:1:30' />
 
 {{outlet}}

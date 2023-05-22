@@ -22,8 +22,22 @@ ember install ember-asciinema-player
 Add the player component to a template:
 
 ```hbs
-<Heap::Player @data={{@asciicastData}} />
+<Heap::Player @data={{@asciicastData}} @poster='npt:1:30' />
 ```
+
+Pass supported options as component arguments:
+`autoPlay`,
+`loop`,
+`startAt`,
+`speed`,
+`idleTimeLimit`,
+`theme`,
+`poster`,
+`fit`,
+`controls`,
+`markers`,
+`pauseOnMarkers`.  Learn more about these options in
+[the asciinema-player docs](https://github.com/asciinema/asciinema-player#options).
 
 This example assumes that `@asciicastData` is a preloaded asciicast file.
 Asciicast may be fetched from a remote source.  For example, to preload
