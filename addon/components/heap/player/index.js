@@ -23,7 +23,7 @@ export default class HeapPlayerComponent extends Component {
   initialized = false;
 
   /**
-   * Options of the underlying AsciinemaPlayer support by this component,
+   * Options of the underlying AsciinemaPlayer supported by this component,
    * which may be passed as named arguments to the player.
    * @type {string[]}
    * @see https://github.com/asciinema/asciinema-player#options
