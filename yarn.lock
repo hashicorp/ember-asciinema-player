@@ -953,10 +953,17 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.14.0", "@babel/runtime@^7.15.4", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.14.0", "@babel/runtime@^7.8.4":
   version "7.20.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.6.tgz#facf4879bfed9b5326326273a64220f099b0fce3"
   integrity sha512-Q+8MqP7TiHMWzSfwiJwXCjyf4GYA4Dgw3emg/7xmwsdLJOZUp+nMqcOwOzzYheuM1rhDu8FSj2l0aoMygEuXuA==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
+"@babel/runtime@^7.21.0":
+  version "7.21.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.5.tgz#8492dddda9644ae3bda3b45eabe87382caee7200"
+  integrity sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==
   dependencies:
     regenerator-runtime "^0.13.11"
 
@@ -2002,12 +2009,12 @@ array-unique@^0.3.2:
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha512-SleRWjh9JUud2wH1hPs9rZBZ33H6T9HOiL0uwGnGx9FpE6wKGyfWugmbkEOIs6qWrZhg0LWeLziLrEwQJhs5mQ==
 
-asciinema-player@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/asciinema-player/-/asciinema-player-3.0.1.tgz#4ea9e6ee2cc5c1f956bfb562950279dcfad3e737"
-  integrity sha512-plm/C/MhOtZWysrfcT/rzxOuu8vxvvDSvF50pqZS6KpJUDmATedAhO54zktbE/g7RiaaYfzgX8xjRhlQdgISwA==
+asciinema-player@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/asciinema-player/-/asciinema-player-3.4.0.tgz#8664e0b305ac03acd94d0ab1ff0be0e8ca4dcff8"
+  integrity sha512-dX6jt5S3K6daItsVWzyY9mRDK+ivC2QgqCxFkdSiNslo0vY/ZqA4upcTzqIKZqBtxppovOZk44ltg9VnHG9QVg==
   dependencies:
-    "@babel/runtime" "^7.15.4"
+    "@babel/runtime" "^7.21.0"
     solid-js "^1.3.0"
 
 assert-never@^1.2.1:
