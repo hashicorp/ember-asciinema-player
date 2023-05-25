@@ -55,7 +55,6 @@ export default class HeapPlayerComponent extends Component {
   get options() {
     return this.supportedOptions.reduce(
       (obj, key) => {
-        console.log(key, this.args?.[key]);
         return this.args?.[key] !== undefined
           ? { ...obj, [key]: this.args[key] }
           : obj

@@ -23,7 +23,7 @@ module('Integration | Component | heap/player', function (hooks) {
     // initialization is async.  Therefore tests must `waitUntil` the expected
     // DOM state is reached.
     await waitUntil(() =>
-      assert.dom('.asciinema-player')
+      assert.dom('.ap-player')
         .hasAnyText('ember-asciinema-player git:(main*)')
     );
   });
