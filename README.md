@@ -1,3 +1,7 @@
+# ⛔️ DEPRECATED
+
+This project is no longer maintained. Instead consider creating an asciinema player component. Please reference this [asciinema-player component](https://github.com/hashicorp/boundary-ui/blob/main/ui/admin/app/components/session-recording/player/asciinema-player.js) for an example of how to do so.
+
 # ember-asciinema-player
 
 Asciinema Player for Ember.
